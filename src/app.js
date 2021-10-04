@@ -22,20 +22,20 @@ app.use(express.static(pdpath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather app",
-    name: "chaithra",
+    name: "Chaithra Bhadran",
   });
 });
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
-    name: "chaithra",
+    name: "Chaithra Bhadran",
   });
 });
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
-    name: "chaithra",
-    message: "This the help text sample",
+    name: "Chaithra Bhadran",
+    message: "This is the help text sample",
   });
 });
 
@@ -84,14 +84,14 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "Help",
-    name: "chaithra",
+    name: "Chaithra Bhadran",
     errorMessage: "Help article not found",
   });
 });
 app.get("*", (req, res) => {
   res.render("404", {
     title: "Help",
-    name: "chaithra",
+    name: "Chaithra Bhadran",
     errorMessage: "Page not found",
   });
 });
